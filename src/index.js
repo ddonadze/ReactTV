@@ -4,14 +4,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './NavBar';
-import MtavariNews from './MtavariNews';
 import Container from "react-bootstrap/Container"
+import NewsTabs from './newsTabs/NewsTabs';
 
 ReactDOM.render(
   <React.StrictMode>
      <Container>
           <NavBar/>
-          <MtavariNews/>
+          <NewsTabs/>
     </Container>
   </React.StrictMode>,
   document.getElementById('root')
