@@ -1,19 +1,20 @@
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import MtavariNews from '../MtavariNews';
+import FormulaNews from '../Formula-News/FormulaNews';
 
 const NewsTabs = () => {
     return (
       
       <Tabs transition={false} className=" mt-5">
-        <Tab eventKey="Main" title="Main">
-          <MtavariNews />
+        <Tab eventKey="Main" title="Main" active>
+          <div>Matavi gverdi</div>
         </Tab>
         <Tab eventKey="Mtavari" title="Mtavari">
-          <div>david1</div>
+          <MtavariNews />
         </Tab>
         <Tab eventKey="Pormula" title="Pormula">
-          <div>david2</div>
+          <FormulaNews/>
         </Tab>
       </Tabs>
 
